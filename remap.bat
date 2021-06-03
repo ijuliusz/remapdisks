@@ -13,5 +13,11 @@ net use %driveLetter% /delete /y
 for /f delims^=^\^ tokens^=1 %%p in ("%serverIP%") do (set oldIP=%%p)
 call set serverIP=%%serverIP:!oldIP!=!newIP!%%
 net use %driveLetter% %serverIP% /p:yes
+net use
 
+echo Questions or problems? Contact me at coder@ijuliusz.pl
+echo script written by iJuliusz
+
+endlocal
 :end
+pause
